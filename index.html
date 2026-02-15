@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าเว็บหลัก</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #333;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background-color: #333;
+            color: white;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+
+    <div class="button-container">
+        <a href="汉语教程.html"><div class="btn">汉语教程</div></a>
+        <a href="HSK standard course.html"><div class="btn">HSK standard course</div></a>
+    </div>
+
+</body>
+</html>
