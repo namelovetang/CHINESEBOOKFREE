@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ดาวน์โหลดหนังสือ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background: linear-gradient(135deg,#667eea,#764ba2);
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:50px auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+        .book-card{
+            background:white;
+            border-radius:18px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,0,0,0.25);
+            text-align:center;
+            transition:0.3s;
+        }
+        .book-card:hover{
+            transform:translateY(-8px);
+        }
+        .book-card img{
+            width:100%;
+            height:350px;
+            object-fit:cover;
+        }
+        .book-body{
+            padding:20px;
+        }
+        .download-btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:#222;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+        .download-btn:hover{
+            background:#444;
+        }
+        header{
+            text-align:center;
+            padding:40px 20px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ดาวน์โหลดหนังสือเรียน</h1>
+    <p>กดปุ่มเพื่อดาวน์โหลดไฟล์หนังสือ</p>
+</header>
+
+<div class="container">
+
+    <div class="book-card">
+        <img src="images/ปกHSK2 textbook.png" alt="Textbook">
+        <div class="book-body">
+            <h3>HSK 2 Textbook</h3>
+           <a href="https://drive.google.com/file/d/1YHanVNMF8VMU-iYjRSo40_tUbfvvedZu/view?usp=drive_link" target="_blank" class="download-btn">ดาวน์โหลด</a>
+
+        </div>
+    </div>
+
+    <div class="book-card">
+        <img src="images/ปกHSK2 workbook.png" alt="Workbook">
+        <div class="book-body">
+            <h3>HSK 2 Workbook</h3>
+           <a href="https://drive.google.com/file/d/1Fqr8X_8aUkBVPd3o3jqHJbKPWV14qIJz/view?usp=drive_link" target="_blank" class="download-btn">ดาวน์โหลด</a>
+
+        </div>
+    </div>
+
+
+</div>
+
+<a href="index.html" class="back">← กลับหน้าแรก</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
